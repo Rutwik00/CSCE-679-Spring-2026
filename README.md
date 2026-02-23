@@ -9,11 +9,12 @@ The visualization displays daily temperature data aggregated into monthly summar
 ## 🔍 Visualization Preview
 
 <p align="center">
-  <img src="screenshot.png" width="950"/>
+  <img src="assets/screenshot.png" width="950"/>
 </p>
 <p align="center">
-  <img src="screenshot1.png" width="950"/>
+  <img src="assets/screenshot1.png" width="950"/>
 </p>
+
 ---
 
 ## 📌 Features
@@ -45,3 +46,20 @@ The visualization displays daily temperature data aggregated into monthly summar
 ---
 
 ## 📂 Project Structure
+
+```
+Data_vis/
+│
+├── index.html                # Main HTML structure and SVG container
+├── main.js                   # Data loading, processing, rendering, interaction logic
+├── style.css                 # Layout and visual styling
+├── temperature_daily.csv     # Daily temperature dataset
+│
+├── assets/
+│   ├── screenshot.png        # MAX mode preview
+│   └── screenshot1.png       # MIN mode preview
+│
+├── AI_interaction_log.md     # Documentation of AI assistance used
+├── AI_reflection.md          # Reflection on AI usage
+└── README.md                 # Project documentation
+```
