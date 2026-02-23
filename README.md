@@ -9,9 +9,6 @@ The visualization displays daily temperature data aggregated into monthly summar
 ## 🔍 Visualization Preview
 
 <p align="center">
-  <img src="assets/screenshot.png" width="950"/>
-</p>
-<p align="center">
   <img src="assets/screenshot1.png" width="950"/>
 </p>
 
@@ -56,8 +53,7 @@ Data_vis/
 ├── temperature_daily.csv     # Daily temperature dataset
 │
 ├── assets/
-│   ├── screenshot.png        # MAX mode preview
-│   └── screenshot1.png       # MIN mode preview
+│   └── screenshot1.png       # Visualization preview
 │
 ├── AI_interaction_log.md     # Documentation of AI assistance used
 ├── AI_reflection.md          # Reflection on AI usage
