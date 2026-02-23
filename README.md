@@ -9,8 +9,7 @@ The visualization displays daily temperature data aggregated into monthly summar
 ## 🔍 Visualization Preview
 
 <p align="center">
-  <img src="screenshot1.png" width="950"/>
-  <img src="screenshot.png" width="950"/>
+  <img src="assets/screenshot1.png" width="950"/>
 </p>
 
 ---
