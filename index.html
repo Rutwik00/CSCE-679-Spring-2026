@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Matrix (10 Years)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="title">Temperature Matrix (Last 10 Years)</h1>
+    <p class="subtitle">
+      Mode:
+      <span id="modeLabel" class="mode-pill mode-max">MAX</span>
+      <span class="hint">Click the chart to toggle MAX ↔ MIN. Hover cells for details.</span>
+    </p>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <div id="legend" class="legend"></div>
+      <svg id="chart" class="chart" aria-label="Temperature matrix"></svg>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Your script -->
+  <script src="main.js"></script>
+</body>
+</html>

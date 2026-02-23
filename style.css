@@ -1,0 +1,152 @@
+:root{
+    --bg: #0f1216;
+    --panel: #141a21;
+    --text: #e8eef6;
+    --muted: #a6b3c2;
+    --stroke: rgba(255,255,255,0.12);
+    --shadow: 0 14px 40px rgba(0,0,0,0.35);
+    --radius: 14px;
+  }
+  
+  *{ box-sizing: border-box; }
+  
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  }
+  
+  .page-header{
+    padding: 22px 22px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title{
+    margin: 0 0 6px 0;
+    font-size: 26px;
+    letter-spacing: 0.2px;
+  }
+  
+  .subtitle{
+    margin: 0;
+    color: var(--muted);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .hint{
+    font-size: 13px;
+    opacity: 0.95;
+  }
+  
+  .mode-pill{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    border: 1px solid var(--stroke);
+  }
+  
+  .mode-max{ background: rgba(255,255,255,0.06); }
+  .mode-min{ background: rgba(255,255,255,0.06); }
+  
+  .layout{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 22px 30px;
+  }
+  
+  .panel{
+    background: var(--panel);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 14px;
+  }
+  
+  .chart{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .legend{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .legend .legend-title{
+    color: var(--muted);
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  
+  .tooltip{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(15, 18, 22, 0.96);
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 10px;
+    padding: 10px 12px;
+    min-width: 180px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.4);
+    transform: translate(10px, 10px);
+    font-size: 13px;
+    line-height: 1.35;
+  }
+  
+  .tooltip .tt-title{
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  
+  .tooltip .tt-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: var(--muted);
+  }
+  
+  .tooltip .tt-row b{
+    color: var(--text);
+    font-weight: 700;
+  }
+  
+  /* Cell styling */
+  .cell-rect{
+    stroke: rgba(255,255,255,0.10);
+    shape-rendering: crispEdges;
+  }
+  
+  .cell-group:hover .cell-rect{
+    stroke: rgba(255,255,255,0.6);
+    stroke-width: 1.6px;
+  }
+  
+  .sparkline{
+    fill: none;
+    stroke: rgba(255,255,255,0.85);
+    stroke-width: 1.2px;
+    vector-effect: non-scaling-stroke;
+    opacity: 0.95;
+  }
+  
+  .axis text{
+    fill: rgba(255,255,255,0.72);
+    font-size: 11px;
+  }
+  
+  .axis path, .axis line{
+    stroke: rgba(255,255,255,0.14);
+  }
